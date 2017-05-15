@@ -23,6 +23,7 @@
     UIViewController *vc=  [[JJMediator sharedInstance]getBussinsA:^(NSDictionary *result) {
         NSString *text= [result objectForKey:@"inputCall"];
         if (text) {
+            
             self.label.text=text;
         }
     }];
